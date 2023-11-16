@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        class Ed extends HTMLElement{
+                connectedCallback(){
+                    this.innerHTML = new Date().getFullYear();
+                }
+            }
+
+            customElements.define("x-ed", Ed);
+    </script>
+</head>
+
+<body>
+    <x-ed></x-ed>
+</body>
+
+</html>
